@@ -23,6 +23,10 @@ jobs:
         echo "Workspace path is: ${{ github.workspace }}"
         echo "Katalon project path is: $(pwd)/"
 
+    - name: Run Katalon tests
+      run: |
+        katalonc -noSplash -runMode=console -projectPath="/demo_ci_cd.prj" -retry=0 -testSuitePath="Test Suites/suite1" -browserType="Remote" -executionProfile="default" -apiKey="bddc08a5-bb81-4a95-b201-7f39205357bc" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true -webui.autoUpdateDrivers=true
+
     # - name: npm install, build, and test
     #   run: |
     #     cd Frontend/web-ui
