@@ -1,0 +1,8 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+suite1,Edge Chromium 126,,,17-06-2024 21:30:19,17-06-2024 21:30:31,12.122s,PASSED
+,,,,,,,
+Test Cases/Homepage/test apperance,Edge Chromium 126,,,17-06-2024 21:30:19,17-06-2024 21:30:31,11.853s,PASSED
+"openBrowser("""")",Edge Chromium 126,,,17-06-2024 21:30:20,17-06-2024 21:30:24,4.230s,PASSED
+"navigateToUrl(""http://localhost:5173/"")",Edge Chromium 126,,,17-06-2024 21:30:24,17-06-2024 21:30:26,1.993s,PASSED
+"verifyElementPresent(findTestObject(""Page_FITviec  Top IT Jobs for You/img_All Jobs_w-108px""), 0)",Edge Chromium 126,,,17-06-2024 21:30:26,17-06-2024 21:30:31,4.819s,PASSED
+closeBrowser(),Edge Chromium 126,,,17-06-2024 21:30:31,17-06-2024 21:30:31,0.436s,PASSED

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="suite1" time="12.122" tests="1" failures="0" errors="0">
+   <testsuite name="suite1" tests="1" failures="0" errors="0" time="12.122" skipped="0" timestamp="17-06-2024T21:30:19" hostname="Son - host.docker.internal" id="Test Suites/suite1">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform"/>
+         <property name="logFolder" value="F:\\Coding_and_CS\\temp\\CICD\\KatalonTesting\\demo_ci_cd\\Reports\\20240617_213013\\suite1\\20240617_213013"/>
+         <property name="logFiles" value="F:\\Coding_and_CS\\temp\\CICD\\KatalonTesting\\demo_ci_cd\\Reports\\20240617_213013\\suite1\\20240617_213013\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="Son - host.docker.internal"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="9.5.0.217"/>
+         <property name="browser" value="Edge Chromium 126"/>
+         <property name="hostAddress" value="192.168.1.36"/>
+         <property name="sessionId" value="60e654560f7322b068082349bb4f26ca"/>
+         <property name="seleniumVersion" value="3.141.59"/>
+         <property name="proxyInformation" value="ProxyInformation { proxyOption=NO_PROXY, proxyServerType=HTTP, username=, password=********, proxyServerAddress=, proxyServerPort=0, executionList=&quot;&quot;, isApplyToDesiredCapabilities=true }"/>
+         <property name="platform" value="Windows 10"/>
+      </properties>
+      <testcase name="Test Cases/Homepage/test apperance" time="11.853" classname="Test Cases/Homepage/test apperance" status="PASSED">
+         <system-out><![CDATA[17-06-2024T21:30:19 - [TEST_CASE][PASSED] - Test Cases/Homepage/test apperance: Test Cases/Homepage/test apperance
+
+17-06-2024T21:30:20 - [TEST_STEP][PASSED] - openBrowser(""): Browser is opened with url: ''
+
+17-06-2024T21:30:20 - [MESSAGE][INFO] - Starting 'Edge Chromium' driver
+
+17-06-2024T21:30:21 - [MESSAGE][INFO] - Action delay is set to 0 milliseconds
+
+17-06-2024T21:30:24 - [MESSAGE][PASSED] - Browser is opened with url: ''
+
+17-06-2024T21:30:24 - [TEST_STEP][PASSED] - navigateToUrl("http://localhost:5173/"): Navigate to 'http://localhost:5173/' successfully
+
+17-06-2024T21:30:26 - [MESSAGE][PASSED] - Navigate to 'http://localhost:5173/' successfully
+
+17-06-2024T21:30:26 - [TEST_STEP][PASSED] - verifyElementPresent(findTestObject("Page_FITviec  Top IT Jobs for You/img_All Jobs_w-108px"), 0): Object 'Object Repository/Page_FITviec  Top IT Jobs for You/img_All Jobs_w-108px' is present
+
+17-06-2024T21:30:26 - [MESSAGE][WARNING] - Timeout '0' is invalid. Using default page load timeout: '30'
+
+17-06-2024T21:30:31 - [MESSAGE][PASSED] - Object 'Object Repository/Page_FITviec  Top IT Jobs for You/img_All Jobs_w-108px' is present
+
+17-06-2024T21:30:31 - [TEST_STEP][PASSED] - closeBrowser(): Browser is closed
+
+17-06-2024T21:30:31 - [MESSAGE][PASSED] - Browser is closed]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[17-06-2024T21:30:19 - [TEST_SUITE][PASSED] - suite1: Test Cases/Homepage/test apperance]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
