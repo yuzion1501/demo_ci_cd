@@ -18,17 +18,28 @@ jobs:
       with:
         node-version: '18.x'
 
-    - name: test path
+    - name: Test path
       run: |
         echo "Workspace path is: ${{ github.workspace }}"
         echo "Katalon project path is: $(pwd)/"
 
-    - name: Katalon Studio Github Action
-      uses: katalon-studio/katalon-studio-github-action@v3.0
-      with:
-          version: '7.5.5'
-          projectPath: '${{ github.workspace }}'
-          args: '-noSplash -retry=0 -testSuitePath="Test Suites/suite1" -apiKey= "bddc08a5-bb81-4a95-b201-7f39205357bc" --config -webui.autoUpdateDrivers=true'
+    - name: Install Xvfb
+      run: sudo apt-get install -y xvfb
+
+    - name: Download Katalon
+      run: |
+        mkdir -p katalon
+        cd katalon
+        curl -O https://download.katalon.com/7.5.5/Katalon_Studio_Engine_Linux_64-7.5.5.tar.gz
+        tar -xzf Katalon_Studio_Engine_Linux_64-7.5.5.tar.gz
+        cd ..
+
+    - name: Run Katalon tests with Xvfb
+      env:
+        KATALON_API_KEY: ${{ secrets.KATALON_API_KEY }}
+      run: |
+        xvfb-run -a ./katalon/Katalon_Studio_Engine_Linux_64-7.5.5/katalonc -noSplash -runMode=console -projectPath="${{ github.workspace }}" -retry=0 -testSuitePath="Test Suites/suite1" -apiKey="${{ secrets.KATALON_API_KEY }}" --config -webui.autoUpdateDrivers=true
+
 
     # - name: npm install, build, and test
     #   run: |
