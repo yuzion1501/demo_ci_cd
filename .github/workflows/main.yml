@@ -18,9 +18,13 @@ jobs:
       with:
         node-version: '18.x'
 
-    - name: npm install, build, and test
+    - name: test path
       run: |
         echo "Workspace path is: ${{ github.workspace }}"
+        echo "Katalon project path is: $(pwd)/"
+
+    - name: npm install, build, and test
+      run: |
         cd Frontend/web-ui
         npm install
         npm run build --if-present
