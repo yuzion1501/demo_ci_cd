@@ -1,4 +1,4 @@
-cd web-ui
+cd Frontend/web-ui
 
 npm install
 
