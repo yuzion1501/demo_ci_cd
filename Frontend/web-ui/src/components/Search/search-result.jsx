@@ -45,7 +45,7 @@ const cities = [
     { value: "all cities", label: "Vietnam" },
     { value: "ho chi minh", label: "Ho Chi Minh" },
     { value: "ha noi", label: "Ha Noi" },
-    // { value: "da nang", label: "Da Nang" },
+    { value: "da nang", label: "Da Nang" },
     { value: "others", label: "Others" },
 ];
 const requestWithBody = async (body, options = {}) => {
